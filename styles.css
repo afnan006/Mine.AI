@@ -145,11 +145,16 @@ body, html {
     flex: 2;
     /* Adjust the flex property to make it longer */
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: none;
     font-size: 16px;
     margin-right: 10px;
     /* Add some spacing between textarea and button */
+    width: 1100px;
+    height: 20px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #323232;
+    color: aliceblue;
 }
 
 .submit-button {
@@ -222,7 +227,6 @@ body, html {
 .logo-eng {
     width: 51px;
     height: 61px;
-    margin-left: 35px;
     /* Add margin to separate logo and image */
     background-color: #fff;
     /* Set background color to white */
@@ -328,3 +332,33 @@ body, html {
     margin-top: 5%;
 
 }
+
+/* CSS for displaying mineLogoImg and answerDiv side by side */
+.ans-container {
+    display: flex;
+    /* Use flexbox */
+    align-items: center;
+    /* Vertically center align content */
+    margin-top: 10px;
+    /* Add some spacing between questions and answers */
+}
+
+.logo-mine {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    /* Add some spacing between the logo and the answer */
+}
+
+.answer {
+    flex: 1;
+    /* Allow the answer div to grow and fill available space */
+    padding: 10px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.chat-form {
+    display: flex;
+}
+

@@ -28,14 +28,28 @@ document.addEventListener("DOMContentLoaded", function () {
             questionContainer.appendChild(engineerLogoImg);
             questionContainer.appendChild(questionDiv);
 
+            // Create a parent container for the logo and ans
+            const ansContainer = document.createElement("div");
+            ansContainer.className = "ans-container";
+
+            // Create an image element for the engineer's logo
+            const mineLogoImg = document.createElement("img");
+            mineLogoImg.src = "Group 8.png";
+            mineLogoImg.alt = "minegem";
+            mineLogoImg.className = "logo-mine";
+
             // Create a div element for the answer and set a default response
             const answerDiv = document.createElement("div");
             answerDiv.className = "answer";
             answerDiv.textContent = "Answer: I don't have an answer for that.";
 
+            // Append the engineer's logo and the user's question to the parent container
+            ansContainer.appendChild(mineLogoImg);
+            ansContainer.appendChild(answerDiv);
+
             // Append the question container and the answer to the chat container
             chatContainer.appendChild(questionContainer);
-            chatContainer.appendChild(answerDiv);
+            chatContainer.appendChild(ansContainer);
 
             // Clear the input field
             userInput.value = "";
