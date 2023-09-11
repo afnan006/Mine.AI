@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Create an image element for the engineer's logo
             const engineerLogoImg = document.createElement("img");
-            engineerLogoImg.src = "Images/engineer.png";
+            engineerLogoImg.src = "engineer.png";
             engineerLogoImg.alt = "engineer";
             engineerLogoImg.className = "logo-eng";
 
@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
             userInput.value = "";
         }
     }
+
 
     if (submitButton) {
         submitButton.addEventListener("click", handleSubmit);

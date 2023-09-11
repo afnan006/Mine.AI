@@ -2,78 +2,104 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* Use your preferred font family */
+    font-family: Arial, sans-serif;
+    /* Use your preferred font family */
 }
 
 /* Create a container for the sidebar and main content */
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: stretch; /* Vertically stretch to fill the height */
-    height: 100vh; /* 100% of the viewport height */
-    overflow: hidden; /* Hide overflow content */
+    align-items: stretch;
+    /* Vertically stretch to fill the height */
+    height: 100vh;
+    /* 100% of the viewport height */
+    overflow: hidden;
+    /* Hide overflow content */
 }
 
 /* Style for the sidebar */
 .sidebar {
-    flex: 0.5; /* Take up 1/3 of the available space */
-    background-color: #2F2F2F; /* Dark gray background color */
-    padding: 20px; /* Reduce padding */
+    flex: 0.5;
+    /* Take up 1/3 of the available space */
+    background-color: #2F2F2F;
+    /* Dark gray background color */
+    padding: 20px;
+    /* Reduce padding */
     box-sizing: border-box;
-    height: 100vh; /* 100% of the viewport height */
+    height: 100vh;
+    /* 100% of the viewport height */
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: left; /* Center items horizontally */
-    gap: 12px; /* Add some spacing between items */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: left;
+    /* Center items horizontally */
+    gap: 12px;
+    /* Add some spacing between items */
 }
 
 /* Style for the sidebar items */
 .sidebar-item {
-    padding: 10px 20px; /* Increase padding */
+    padding: 10px 20px;
+    /* Increase padding */
     cursor: pointer;
     transition: background-color 0.3s;
-    border-radius: 20px; /* Rounded corners */
-    color: white; /* Text color */
+    border-radius: 20px;
+    /* Rounded corners */
+    color: white;
+    /* Text color */
 }
 
 .sidebar-item:hover {
-    background-color: #1C1B1B; /* Dark gray on hover */
+    background-color: #1C1B1B;
+    /* Dark gray on hover */
 }
 
 /* Style for the logo and logo image */
 .logo {
     font-size: 29px;
-    display: flex; /* Display the logo and image side by side */
-    align-items: center; /* Vertically center items */
-    color: #E0E0E0; /* Light gray text color */
+    display: flex;
+    /* Display the logo and image side by side */
+    align-items: center;
+    /* Vertically center items */
+    color: #E0E0E0;
+    /* Light gray text color */
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    letter-spacing: 20px; /* Adjust as needed */
+    letter-spacing: 20px;
+    /* Adjust as needed */
     word-wrap: break-word;
     text-align: center;
 }
 
 .logo1 {
-    width: 100%; /* Use 100% width to make it span horizontally */
-    height: auto; /* Automatically adjust the height to maintain aspect ratio */
-    text-align: center; /* Center the text horizontally */
+    width: 100%;
+    /* Use 100% width to make it span horizontally */
+    height: auto;
+    /* Automatically adjust the height to maintain aspect ratio */
+    text-align: center;
+    /* Center the text horizontally */
     color: rgba(214, 214, 214, 0.21);
-    font-size: 48px; /* Adjust the font size as needed */
+    font-size: 48px;
+    /* Adjust the font size as needed */
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    letter-spacing: 50px; /* Adjust the letter-spacing as needed */
+    letter-spacing: 50px;
+    /* Adjust the letter-spacing as needed */
     word-wrap: break-word;
 }
 
 .logo-img {
     width: 51px;
     height: 72px;
-    margin-left: 35px; /* Add margin to separate logo and image */
+    margin-left: 35px;
+    /* Add margin to separate logo and image */
 }
 
 /* Style for the main content */
 .main-content {
-    flex: 2; /* Take up 2/3 of the available space */
+    flex: 2;
+    /* Take up 2/3 of the available space */
     background-color: #4E4D4D;
     color: rgba(214, 214, 214, 0.21);
     padding: 70px;
@@ -85,34 +111,45 @@ body, html {
 
 /* Style for the 'Chat Topic' header items */
 .header-item {
-    background-color: #323232; /* Dark gray background color */
-    color: white; /* Text color */
+    background-color: #323232;
+    /* Dark gray background color */
+    color: white;
+    /* Text color */
     padding: 10px 20px;
-    border-radius: 20px; /* Rounded corners */
-    text-align: center; /* Center text horizontally */
-    width: 120px; /* Adjust width as needed */
+    border-radius: 20px;
+    /* Rounded corners */
+    text-align: center;
+    /* Center text horizontally */
+    width: 120px;
+    /* Adjust width as needed */
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    letter-spacing: 1px; /* Adjust as needed */
+    letter-spacing: 1px;
+    /* Adjust as needed */
 }
 
 /* Style for the chat interface (text area and submit button) */
 .chat-interface {
     display: flex;
-    flex-direction: row; /* Stack elements horizontally */
+    flex-direction: row;
+    /* Stack elements horizontally */
     align-items: center;
-    width: 100%; /* Occupy 100% of the container width */
+    width: 100%;
+    /* Occupy 100% of the container width */
     padding: 20px;
-    border-top: 1px solid #ccc; /* Add a top border for separation */
+    border-top: 1px solid #ccc;
+    /* Add a top border for separation */
 }
 
 .chat-input {
-    flex: 2; /* Adjust the flex property to make it longer */
+    flex: 2;
+    /* Adjust the flex property to make it longer */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    margin-right: 10px; /* Add some spacing between textarea and button */
+    margin-right: 10px;
+    /* Add some spacing between textarea and button */
 }
 
 .submit-button {
@@ -123,7 +160,8 @@ body, html {
     color: white;
     font-size: 16px;
     cursor: pointer;
-    margin-left: auto; /* Push the submit button to the right side */
+    margin-left: auto;
+    /* Push the submit button to the right side */
 }
 
 .submit-button:hover {
@@ -138,34 +176,45 @@ body, html {
 .sidebar-item.with-rectangle::after {
     content: "";
     display: block;
-    width: calc(100% + 20px); /* Adjust the width of the rectangle as needed */
-    height: 3px; /* Adjust the height of the rectangle as needed */
-    background-color: #1C1B1B; /* Color of the rectangle */
+    width: calc(100% + 20px);
+    /* Adjust the width of the rectangle as needed */
+    height: 3px;
+    /* Adjust the height of the rectangle as needed */
+    background-color: #1C1B1B;
+    /* Color of the rectangle */
     position: absolute;
-    bottom: 0; /* Move the rectangle to the bottom of the item */
-    left: -10px; /* Extend the rectangle to the left */
+    bottom: 0;
+    /* Move the rectangle to the bottom of the item */
+    left: -10px;
+    /* Extend the rectangle to the left */
 }
 
 @media (min-width: 768px) {
+
     /* Styles for screens wider than 768px */
     .container {
-        flex-direction: row; /* Change the layout to a row for larger screens */
+        flex-direction: row;
+        /* Change the layout to a row for larger screens */
     }
+
     .sidebar {
-        flex: 1; /* Adjust the sidebar width */
+        flex: 1;
+        /* Adjust the sidebar width */
     }
+
     .main-content {
-        flex: 3; /* Adjust the main content width */
+        flex: 3;
+        /* Adjust the main content width */
     }
 }
 
 /* Style for user's question */
 .user-question {
-    background-color: black; /* Background color for user's question */
     padding: 10px;
     border-radius: 4px;
     color: white;
-    margin-right: 10px; /* Add spacing between the question and the input */
+    margin-right: 10px;
+    /* Add spacing between the question and the input */
 }
 
 /* Style for user's question image */
@@ -173,29 +222,35 @@ body, html {
 .logo-eng {
     width: 51px;
     height: 61px;
-    margin-left: 35px; /* Add margin to separate logo and image */
-    background-color: #fff; /* Set background color to white */
+    margin-left: 35px;
+    /* Add margin to separate logo and image */
+    background-color: #fff;
+    /* Set background color to white */
 }
 
 /* Style for saved questions container */
 .saved-questions {
-    background-color: #333; /* Dark gray background */
+    /* Dark gray background */
     padding: 10px;
     border-radius: 4px;
     margin-top: 20px;
     overflow-y: auto;
-    max-height: 200px; /* Set a maximum height for the saved questions container */
-    color: white; /* Text color */
+    max-height: 200px;
+    /* Set a maximum height for the saved questions container */
+    color: white;
+    /* Text color */
 }
 
 /* Style for each saved question */
 .saved-question {
-    background-color: #444; /* Slightly lighter gray background */
+    background-color: #444;
+    /* Slightly lighter gray background */
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     border-radius: 4px;
-    padding: 5px; /* Add padding to separate content */
+    padding: 5px;
+    /* Add padding to separate content */
 }
 
 /* Style for the image in each saved question */
@@ -203,7 +258,8 @@ body, html {
     width: 51px;
     height: 61px;
     margin-left: 10px;
-    background-color: #fff; /* White background for the image */
+    background-color: #fff;
+    /* White background for the image */
     border-radius: 4px;
 }
 
@@ -211,9 +267,64 @@ body, html {
 .saved-question p {
     margin: 0;
     padding-left: 10px;
-    color: white; /* Text color */
+    color: white;
+    /* Text color */
 }
 
 .chat-container {
     overflow-y: auto;
+}
+
+.question-container {
+    background-color: #1C1B1B;
+    display: flex;
+    /* Use flexbox */
+    align-items: center;
+    /* Vertically center align content */
+    margin-bottom: 10px;
+}
+
+.logo-container {
+    flex: 0 0 auto;
+    /* The logo container won't grow or shrink */
+    margin-right: 10px;
+    /* Add some spacing between the logo and question */
+}
+
+.logo-eng {
+    width: 50px;
+    height: 50px;
+}
+
+.user-question {
+    flex: 1;
+    /* Allow the question div to grow and fill available space */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sidebar-item-new {
+    width: 252px;
+    height: 59px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #1C1B1B;
+
+}
+
+.newbutton {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    height: 39px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 5%;
+
 }
