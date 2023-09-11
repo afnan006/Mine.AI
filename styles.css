@@ -214,3 +214,6 @@ body, html {
     color: white; /* Text color */
 }
 
+.chat-container {
+    overflow-y: auto;
+}
