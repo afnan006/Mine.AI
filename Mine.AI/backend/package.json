@@ -1,0 +1,25 @@
+{
+  "name": "mine.ai",
+  "version": "1.0.0",
+  "description": "An AI ChatBot",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afnan006/Mine.AI.git"
+  },
+  "author": "Afnan Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afnan006/Mine.AI/issues"
+  },
+  "homepage": "https://github.com/afnan006/Mine.AI#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}
