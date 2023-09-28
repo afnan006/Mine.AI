@@ -1,0 +1,69 @@
+/* Styles for slideshow container */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set the container to the full viewport height */
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Styles for slides */
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the entire container */
+}
+
+/* Styles for text in slides */
+.mySlides h1 {
+    font-size: 48px;
+    padding: 20px;
+}
+
+/* Style for the "Chat" button */
+.chat-button {
+    display: block;
+    position: absolute;
+    bottom: 20px; /* Adjust the button's position as needed */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Center the button horizontally */
+    width: 100px;
+    padding: 10px 20px;
+    background-color: #112F53;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    z-index: 1; /* Ensure the button is above the images */
+}
+
+/* Style for the "Chat" button on hover */
+.chat-button:hover {
+    background-color: #081428;
+}
+
+/* Hide navigation dots */
+.dot {
+    display: none;
+}
+
+/* Prevent scrollbars */
+body {
+    overflow: hidden;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens, e.g., mobile devices */
+    .mySlides h1 {
+        font-size: 32px; /* Reduce font size for smaller screens */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .chat-button {
+        bottom: 10px; /* Adjust button position for smaller screens */
+        width: 80px; /* Adjust button width for smaller screens */
+        padding: 8px 16px; /* Adjust button padding for smaller screens */
+    }
+}

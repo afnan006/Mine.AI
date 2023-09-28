@@ -1,0 +1,470 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Use your preferred font family */
+    background-image: url('mine44.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    color: white; /* Set the text color to white for better visibility on the background image */
+}
+
+/* Create a container for the sidebar and main content */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Vertically stretch to fill the height */
+    height: 100vh; /* 100% of the viewport height */
+    overflow: hidden; /* Hide overflow content */
+}
+
+/* Style for the sidebar */
+.sidebar {
+    flex: 0.5;
+    /* Take up 1/3 of the available space */
+    padding: 20px;
+    /* Reduce padding */
+    box-sizing: border-box;
+    height: 100vh;
+    /* 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: left;
+    /* Center items horizontally */
+    gap: 12px;
+    /* Add some spacing between items */
+    overflow-y: scroll;
+}
+
+/* Style for the sidebar items */
+.sidebar-item {
+    padding: 10px 20px;
+    /* Increase padding */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+    /* Rounded corners */
+    color: white;
+    /* Text color */
+}
+
+.sidebar-item:hover {
+    background-color: #1C1B1B;
+    /* Dark gray on hover */
+}
+
+/* Style for the logo and logo image */
+.logo {
+    display: flex;
+    align-items: center;
+    color: #E0E0E0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: 20px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+
+.logo1 {
+    width: 100%;
+    /* Use 100% width to make it span horizontally */
+    height: auto;
+    /* Automatically adjust the height to maintain aspect ratio */
+    text-align: center;
+    /* Center the text horizontally */
+    color: rgba(214, 214, 214, 0.21);
+    font-size: 48px;
+    /* Adjust the font size as needed */
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: 50px;
+    /* Adjust the letter-spacing as needed */
+    word-wrap: break-word;
+}
+
+.logo-img {
+    width: 51px;
+    height: 72px;
+    margin-left: 35px;
+    /* Add margin to separate logo and image */
+    background-color: #2F2F2F; /* Background color for the logo */
+}
+
+/* Style for the main content */
+.main-content {
+    flex: 2; /* Take up 2/3 of the available space */
+    background-color: #4E4D4D;
+    color: rgba(214, 214, 214, 0.21);
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Style for the 'Chat Topic' header items */
+.header-item {
+    background-color: #323232;
+    /* Dark gray background color */
+    color: white;
+    /* Text color */
+    padding: 10px 20px;
+    border-radius: 20px;
+    /* Rounded corners */
+    text-align: center;
+    /* Center text horizontally */
+    width: 120px;
+    /* Adjust width as needed */
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    /* Adjust as needed */
+}
+
+/* Style for the chat interface (text area and submit button) */
+.chat-interface {
+    display: flex;
+    flex-direction: row;
+    /* Stack elements horizontally */
+    align-items: center;
+    width: 100%;
+    /* Occupy 100% of the container width */
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    /* Add a top border for separation */
+}
+
+.chat-input {
+    flex: 2; /* Adjust the flex property to make it longer */
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    margin-right: 10px;
+    /* Add some spacing between textarea and button */
+    width: 1100px;
+    height: 20px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #182233;
+    color: aliceblue;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #112F53;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: auto; /* Push the submit button to the right side */
+}
+
+.submit-button:hover {
+    background-color: #081428;
+}
+.back-button {
+    position: fixed;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #112F53; /* Button background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 4px; /* Rounded corners */
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background-color: #081428; /* Button background color on hover */
+}
+
+
+/* Style for the 'sidebar-item' with a rectangle */
+.sidebar-item.with-rectangle {
+    position: relative;
+}
+
+.sidebar-item.with-rectangle::after {
+    content: "";
+    display: block;
+    width: calc(100% + 20px);
+    /* Adjust the width of the rectangle as needed */
+    height: 3px;
+    /* Adjust the height of the rectangle as needed */
+    background-color: #1C1B1B;
+    /* Color of the rectangle */
+    position: absolute;
+    bottom: 0;
+    /* Move the rectangle to the bottom of the item */
+    left: -10px;
+    /* Extend the rectangle to the left */
+}
+
+@media (min-width: 768px) {
+    /* Styles for screens wider than 768px */
+    .container {
+        flex-direction: row;
+        /* Change the layout to a row for larger screens */
+    }
+
+    .sidebar {
+        flex: 1;
+        /* Adjust the sidebar width */
+    }
+
+    .main-content {
+        flex: 3;
+        /* Adjust the main content width */
+    }
+}
+
+/* Style for user's question */
+.question-container {
+    background-color: transparent !important; /* Fully transparent background with !important */
+    display: flex;
+    align-items: center;
+    /* Vertically center align content */
+    margin-bottom: 10px;
+}
+
+.empty-header {
+    height: 140px; /* Adjust the height as needed */
+    background-color: #112F53; /* Match your page's background color */
+    opacity: 0; /* Make it fully transparent */
+}
+
+/* Style for user's question image */
+.logo-eng {
+    width: 51px;
+    height: 61px;
+    /* Add margin to separate logo and image */
+    background-color: #fff;
+    /* Set background color to white */
+}
+
+/* Style for saved questions container */
+.saved-questions {
+    /* Dark gray background */
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    overflow-y: auto;
+    max-height: 200px;
+    /* Set a maximum height for the saved questions container */
+    color: white;
+    /* Text color */
+}
+
+/* Style for each saved question */
+.saved-question {
+    background-color: #444;
+    /* Slightly lighter gray background */
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding: 5px;
+    /* Add padding to separate content */
+}
+
+/* Style for the image in each saved question */
+.saved-question img {
+    width: 51px;
+    height: 61px;
+    margin-left: 10px;
+    background-color: #fff;
+    /* White background for the image */
+    border-radius: 4px;
+}
+
+/* Style for the text in each saved question */
+.saved-question p {
+    margin: 0;
+    padding-left: 10px;
+    color: white;
+    /* Text color */
+}
+
+.chat-container {
+    overflow-y: auto;
+}
+
+.question-container {
+    background-color: #1C1B1B;
+    display: flex;
+    /* Use flexbox */
+    align-items: center;
+    /* Vertically center align content */
+    margin-bottom: 10px;
+}
+
+.logo-container {
+    flex: 0 0 auto;
+    /* The logo container won't grow or shrink */
+    margin-right: 10px;
+    /* Add some spacing between the logo and question */
+}
+
+.logo-eng {
+    width: 50px;
+    height: 50px;
+}
+
+.user-question {
+    flex: 1;
+    /* Allow the question div to grow and fill available space */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3); /* Transparent black background */
+    color: white; /* Text color */
+}
+
+.sidebar-item-new {
+    width: 252px;
+    height: 59px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #1C1B1B;
+}
+
+.newbutton {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    height: 39px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 5%;
+}
+
+/* CSS for displaying mineLogoImg and answerDiv side by side */
+.ans-container {
+    display: flex;
+    /* Use flexbox */
+    align-items: center;
+    /* Vertically center align content */
+    margin-top: 10px;
+    /* Add some spacing between questions and answers */
+}
+
+.logo-mine {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    /* Add some spacing between the logo and the answer */
+}
+
+.answer {
+    flex: 1;
+    /* Allow the answer div to grow and fill available space */
+    padding: 10px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.chat-form {
+    display: flex;
+}
+
+.youtube-suggestions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust the gap between previews as needed */
+    margin-top: auto; /* Push the suggestions to the bottom of the sidebar */
+}
+
+.youtube-preview {
+    background-color: #112F53; /* Beautiful green background color */
+    padding: 10px; /* Add padding to the previews */
+    border-radius: 20px; /* Increase border radius for a more pronounced 3D effect */
+    cursor: pointer; /* Show a pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background color and transform transition on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+    overflow: hidden; /* Hide overflowing content */
+    transform: translateY(0); /* Initial transform state */
+}
+
+.youtube-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px; /* Match the container's border radius */
+    transition: transform 0.3s ease; /* Smooth transform transition on hover */
+}
+
+.youtube-preview h3 {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #FFFFFF; /* White text color for contrast */
+}
+
+/* Change the background color and transform on hover */
+.youtube-preview:hover {
+    background-color: #0B1D39; /* Hover background color */
+    transform: translateY(-5px); /* Lift the preview slightly on hover */
+}
+
+/* Scale the image on hover for a 3D effect */
+.youtube-preview:hover img {
+    transform: scale(1.05); /* Scale up the image on hover */
+}
+
+/* Style the scrollbar for WebKit-based browsers (Chrome, Safari) */
+/* Customize the colors according to your theme */
+
+/* Thin scrollbar track */
+::-webkit-scrollbar {
+    width: 8px; /* Adjust the width as needed */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: #112F53; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+/* Hovered scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0B1D39; /* Color when hovered */
+}
+
+/* styles.css */
+
+#chat-form p {
+    text-align: left; /* Center the text horizontally */
+    font-size: 16px; /* Adjust the font size */
+    color: #777; /* Set the text color */
+    margin-top: 10px; /* Add some space above the notice */
+}
+
+#chat-form p a {
+    color: white; /* Set the color of the link */
+    text-decoration: none; /* Remove the underline */
+}
+
+#chat-form p a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.main-content {
+    background-image: url('mine44.jpg'); /* Replace 'mine33.jpeg' with the URL of your background image */
+    background-size: 100% 100%; /* Use 100% for both width and height to cover the entire main content */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This will ensure the background remains fixed while scrolling */
+    background-position: center center;
+    color: white; /* Set the text color to white for better visibility on the background image */
+}
+
+.fixed{
+    height: 10px;
+}
